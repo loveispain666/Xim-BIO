@@ -1,0 +1,46 @@
+.profileContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 3vh;
+	width: 30vw;
+	height: 45vh;
+	border: 0.2vh solid #222222;
+	backdrop-filter: blur(0.3vh);
+	-webkit-backdrop-filter: blur(0.3vh);
+}
+
+.profileDetails {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.profileAvatar {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50vh;
+	width: 25vh;
+	height: 25vh;
+	text-align: center;
+}
+
+.profileAvatar img {
+	border-radius: 50vh;
+	width: 25vh;
+	height: 25vh;
+}
+
+.profileName {
+	font-size: min(4vh, 4vw);
+	font-weight: 800;
+	text-align: center;
+}
+
+.profileDescription {
+	font-size: min(2vh, 1vw);
+	font-weight: 400;
+	text-align: center;
+	margin-top: 1vh;
+}

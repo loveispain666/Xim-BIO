@@ -1,21 +1,15 @@
-import { useState } from 'react'
-import photo from './assets/photo.jpg'
+import React from 'react'
+import Profile from './components/Profile/Profile'
+import Player from './components/Player/Player'
 import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <div className="bg">
-        <div className='Avatar'>
-          <img src={photo} alt="Avatar" />
-        </div>
-        <div className='Name'>Xim</div>
-        <div className='Bio'>python, web dev, design</div>
-        <div className='Links'></div>
-        <div className='Music'></div>
-      </div>
-    </div>
-  )
+	return (
+		<>
+			<Profile />
+			<Player />
+		</>
+	)
 }
 
 export default App

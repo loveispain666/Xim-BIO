@@ -1,78 +1,18 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  user-select: none;
-
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  overflow: hidden;
-  background-image: url('./assets/bg.jpg');
-  background-size: cover;
-}
-
-.App::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(1vh);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 0;
-}
-
-.App>* {
-  position: relative;
-  z-index: 1;
-}
-
-.Avatar {
-  width: 12vw;
-  height: 12vw;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 0.2vh solid #4b4b4b;
-  margin-top: 2vh;
-
-}
-
-.Avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
-}
-
-.bg {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 3vh;
-  width: 30vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.Name {
-  font-size: min(3vw, 3vh);
-  font-weight: 600;
-  margin-top: 1vh;
-}
-
-.Bio {
-  font-size: min(1.8vw, 1.8vh);
-  color: white;
-  margin-top: 1.5vh;
-  text-align: center;
+body {
+	background-image: url(assets/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #d8d8d8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
