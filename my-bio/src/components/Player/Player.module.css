@@ -93,5 +93,4 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type="range"] {
     flex: 1;
-    /* остальные стили для input остаются без изменений */
 }
