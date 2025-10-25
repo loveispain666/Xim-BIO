@@ -7,7 +7,7 @@ function App() {
 	return (
 		<>
 			<Profile />
-			<Player />
+			<Player audioSrc="/musicplayer/241406897.mp3" />
 		</>
 	)
 }

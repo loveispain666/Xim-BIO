@@ -1,13 +1,97 @@
 .playerContainer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(0, 0, 0, 0.2);
-	border: 0.2vh solid #222222;
-	border-radius: 3vh;
-	width: 30vw;
-	height: 7vh;
-	margin-top: 1vh;
-	backdrop-filter: blur(0.3vh);
-	-webkit-backdrop-filter: blur(0.3vh);
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0.2vh solid #222222;
+    border-radius: 3vh;
+    width: 30vw;
+    height: 10vh;
+    margin-top: 1vh;
+    backdrop-filter: blur(0.3vh);
+    -webkit-backdrop-filter: blur(0.3vh);
+    user-select: none;
+}
+
+.playerDetails {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2vh;
+    gap: 2vh;
+}
+
+.playerImg {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.playerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textinput {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.playerName {
+    font-size: min(2vh, 1vw);
+    font-weight: 400;
+    color: #d8d8d8;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 0.4vh;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1vh;
+    appearance: none;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.2vh;
+    height: 1.2vh;
+    background: #d8d8d8;
+    border-radius: 50%;
+}
+
+.playButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #d8d8d8;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+	
+}
+
+
+.timelineContainer {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    width: 100%;
+}
+
+.timeStamp {
+    font-size: min(1.8vh, 0.9vw);
+    color: #d8d8d8;
+    min-width: 2.5vw;
+}
+
+input[type="range"] {
+    flex: 1;
+    /* остальные стили для input остаются без изменений */
 }
